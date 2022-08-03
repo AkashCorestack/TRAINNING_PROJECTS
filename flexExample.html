@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background: pink;
+            padding: 1em;
+            margin: 1em;
+            display: flex;
+            flex-direction:row;
+            height: 30em;
+            width: 40em;
+            flex-wrap:wrap;
+
+        }
+        .item{
+            background: lightblue;
+            margin: .3em;
+            border: 2px solid black;
+            padding: .5em;
+           height: 10%;
+           width: 10%;
+        }
+        .one,.two{
+            flex-grow: 1;
+            order: -2;
+        }
+        .three{
+            order: -10;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item one">ITEM 1</div>
+        <div class="item two">ITEM 2</div>
+        <div class="item three">ITEM 3</div>
+        
+    </div>
+</body>
+</html>

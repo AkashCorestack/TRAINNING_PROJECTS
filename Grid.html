@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: blanchedalmond;
+        }
+        .grid-container{
+               display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+        }
+        .grid-element{
+            border: 2px solid black;
+          background-color: red;
+        }
+        .one {
+  grid-column: 1 / 4;
+  
+  grid-row: 1/2;
+}
+.two {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2 / 5;
+}
+.four {
+  grid-column: 3;
+  grid-row: 3;
+}
+.five {
+  grid-column: 2;
+  grid-row: 4;
+}
+.six {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div> <h1>Grid Layout Test</h1></div>
+    <div class="grid-container">
+        <div class="grid-element one">Header Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ex enim aspernatur nulla delectus? Repellendus libero dolore quibusdam sequi nisi id, est eius soluta iure eos nobis omnis? Itaque, facere.</div>
+        <div class="grid-element two">Menu</div>
+        <div class="grid-element three">Hero</div>
+        <div class="grid-element four">Main</div>
+        <div class="grid-element five">Image </div>
+        <div class="grid-element six">extra</div>
+    </div>
+    
+    <div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.BT{
+    background: black;
+    color: white;
+    padding: 2em;
+    font-size: 1em;
+    border-radius: 2em;
+    margin-top: 15%;
+    margin-left: 40%;
+}
+.Disp{
+    display: none;
+    background-color: black;
+    color: aliceblue;
+    margin-left: 1em;
+    border-radius: 2em;
+    padding: 3em;
+
+}
+#Txt1, #Txt2{
+color: red;
+}
+</style>
+<body>
+    <button onclick="func()" class="BT" id="B1"> Click me To enter expression</button>
+    <h1 class="Disp" id="Disp">
+        Solution for expresion <b id="Txt1"> </b> is <b id="Txt2"> </b>
+    </h1>
+</body>
+<script>
+function func() {
+    
+
+let a = window.prompt("Enter expression"); 
+var ak = document.getElementById("Disp");
+ak.style.display = "inline";
+
+document.getElementById("B1").style.display = "none";
+document.getElementById("Txt1").innerHTML = " ( "+a + " ) ";
+document.getElementById("Txt2").innerHTML= " ( " + eval(a) + " ) ";
+//document.write("<h1>"+eval(a)+"</h1>");
+}
+
+
+
+</script>
+</html>
+
+

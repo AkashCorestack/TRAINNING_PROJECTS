@@ -1,0 +1,9 @@
+.Main{
+display: grid;
+}
+.btn{
+    border-radius: 2em;
+    padding: 1em;
+    margin: 2em;
+}
+
