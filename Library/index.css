@@ -1,9 +1,11 @@
 .Main{
-display: grid;
+display: inline-block;
 }
 .btn{
     border-radius: 2em;
     padding: 1em;
-    margin: 2em;
+    margin: 6em;
+    width: 10em;
+   
 }
 
